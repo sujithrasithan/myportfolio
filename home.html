@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sujithra_sithan</title>
+    <script src="portfolio.js"></script>
+    <style>
+        .main1{
+          width:100vw;
+          height: 10vh;
+          background-color: purple;
+          position: relative;
+        }
+        .main11{
+            position: absolute;
+              top:50%;
+            left:50%;
+            color: aliceblue;
+        }
+        .main2{
+             width:100vw;
+          height: 80vh;
+          background-color: black;
+          position: relative;
+        }
+        #img1{
+            width:100%;
+          height: 100%;
+          filter: brightness(70%);
+        }
+        .main21{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            color: aliceblue;
+            font-size: large;
+        }
+        .main22{
+            position: absolute;
+            left: 100px;
+            top:500px;
+        }
+        .main22 button{
+            width: 120px;
+            height: 30px;
+
+        }
+        .main23{
+            position: absolute;
+            right: 350px;
+            top:100px
+        }
+        .main24{
+            position: absolute;
+            right: 350px;
+            top:300px
+        }
+        .main23 img{
+              height:600px;
+              width: 450px;
+              border-radius: 25%;
+        }
+        .main3{
+          width:100vw;
+          height: 10vh;
+          background-color: purple;
+        }
+        body{
+            margin: 0px;
+        }
+        .main1 h1{
+            margin: 0px;
+            top:50%;
+            left:50%;
+            color: aliceblue;
+            transform: translate(-50%,-50%);
+        }
+        #hidden {
+  display: none;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="main1">
+        <div class="main11">
+            <h1>SUJITHRA S</h1>
+        </div>
+            
+    </div>
+       <div class="main2">
+           <img src="https://www.pixelstalk.net/wp-content/uploads/images6/Aesthetic-Laptop-Wallpaper-HD-Galaxy.jpg" id="img1">
+       <div class="main21">
+               <h1 id="h1">Hi there,</h1>
+               <h1 id="h2">This is sujithra here</h1>
+               <h1 id="h3"></h1>
+       </div>
+       <div class="main22">
+        <button id="b">About</button>
+       </div>
+       <div class="main23" id="visible">
+          <img src="C:\Users\sujithra\Desktop\SUJITHRA.jpg" alt="SUJITHRA SITHAN">
+       </div>
+       <div class="main24" id="hidden">
+        <h1 style="color: aliceblue;">this will hide</h1>
+       </div>
+        </div>
+           <div class="main3">
+
+           </div> 
+
+           <script>
+              document.getElementById('b').onclick=function(){
+                document.getElementById("h1").innerHTML="FRESHER";
+                document.getElementById("h2").innerHTML="Started my career in infosys";
+                document.getElementById("h3").innerHTML="BTech IT graduate";
+                document.getElementById("visible").style.display="none";
+                document.getElementById("hidden").style.display="block";
+              }
+           </script>
+</body>
+</html>
