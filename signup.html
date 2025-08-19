@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return submitForm()"> 
+        <label for="na">Name</label><br>
+        <input type="text" id="na" placeholder="Enter name"><br>
+        <span id="a1"></span>
+        <br>
+        <label for="">Number</label><br>
+        <input type="number" id="nu" placeholder="enter number"><br>
+        <span id="a2"></span>
+        <br>
+        <label for="ma">E-mail</label><br>
+        <input type="email" id="ma" placeholder="enter email"><br>
+        <span id="a3"></span>
+        <br>
+        <input type="submit">
+
+    </form>
+    <script>
+        function  submitForm(){
+          let name=document.getElementById('na').value;
+          let number=document.getElementById('nu').value;
+          let email=document.getElementById('ma').value;
+
+          if(name==""){
+              document.getElementById('a1').innerHTML="Kindly Enter name"
+              return false;
+          }
+          else{
+             document.getElementById('a1').innerHTML=""
+          }
+          if(number==""){
+            document.getElementById('a2').innerHTML="Enter your ph no"
+            return false;
+          }
+          else if(number==isNaN){
+             document.getElementById('a2').innerHTML="Enter your ph no type"
+          }
+          else{
+             document.getElementById('a1').innerHTML=""
+          }
+          if(email==""){
+            document.getElementById('a3').innerHTML="Enter Email address"
+            return false;
+          }
+          else{
+             document.getElementById('a1').innerHTML=""
+          }
+          alert("Form Submitted")
+          return true;
+          
+        }
+    </script>
+</body>
+</html>
